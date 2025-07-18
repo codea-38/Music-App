@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Music Player</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <img src="queue_music_28dp_FFF_FILL0_wght400_GRAD0_opsz24.png" id="playlist-img" alt="">
+        <h2>Feel The music</h2>
+        <img src="music_note_30dp_FFF_FILL0_wght400_GRAD0_opsz24.png" id="music-img" alt="">
+    </header>
+    <main>
+            <div class="left">
+                <div class="song-img">
+                    <img src="musicwave.webp" alt="" id="musicanim">
+                </div>
+                <div class="volume">
+                    <div class="volume-img">
+                        <img src="volume_down_alt_30dp_FFF_FILL0_wght400_GRAD0_opsz24.png"  alt="" id="vol-svg">
+                    </div>
+                    <input type="range" id="volume-range" onchange="volume()">
+                    
+                </div>
+
+
+            </div>
+
+            <div class="right">
+                <div class="details">
+                    <h3 id="song-name">Ve Kamleya</h3>
+                    <h5 id="singer-name">Arijit Singh</h5>
+                </div>
+
+                <input type="range" name="" id="song-duration" onchange="duration()">
+                <div class="controls">
+                    <div class="prev-img">
+                        <img src="fast_rewind_26dp_FFF_FILL0_wght400_GRAD0_opsz24.png" alt="" id="previous-img"
+                        onclick="previousSong()">
+                    </div>
+                    <div class="play-paus">
+                        <img src="play_arrow_32dp_FFF_FILL0_wght400_GRAD0_opsz40.png" alt="" id="play-pause"
+                        onclick="playPause()">
+                    </div>
+                    <div class="next-img">
+                        <img src="fast_forward_26dp_FFF_FILL0_wght400_GRAD0_opsz24.png" alt="" id="next-img"
+                        onclick="nextSong()">
+                    </div>
+                    
+                    
+                    
+                </div>
+
+            </div>
+            <div class="playlist">
+                <div class="playlist-song">
+                     <img src="artist1.jpg" alt="">
+                     <div class="song-details">
+                        <h3>Ve Kamleya</h3>
+                        <h5>Arijit Singh</h5>
+                     </div>
+                </div>
+                <div class="playlist-song">
+                      <img src="artist2.jpeg" alt="">
+                     <div class="song-details">
+                        <h3>Apna Banale</h3>
+                        <h5>Arijit Singh</h5>
+                     </div>
+
+                </div>
+                <div class="playlist-song">
+                      <img src="artist3.jpg" alt="">
+                     <div class="song-details">
+                        <h3>jugraafiya</h3>
+                        <h5>Shreya Ghoshal and Udit Narayan </h5>
+                     </div>
+
+                </div>
+                <div class="playlist-song">
+                      <img src="artist4.jpg" alt="">
+                     <div class="song-details">
+                        <h3>Haseen</h3>
+                        <h5>Talwiinder</h5>
+                     </div>
+
+                </div>
+            </div>
+    </main>
+
+
+    
+      <script src="script.js"></script>
+        
+    </body>
+
+</html>
